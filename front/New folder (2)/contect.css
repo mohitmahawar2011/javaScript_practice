@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: wheat;
+}
+
+.forms{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+    
+}
+
+form{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* text-align: center; */
+    flex-direction: column;
+    
+}
+
+.submit{
+    width: 20%;
+    height: 20%
+
+}
+a{
+    display: flex;
+    padding-top: 28%;
+}
