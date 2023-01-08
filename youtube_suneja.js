@@ -132,6 +132,7 @@
 
 // lec -4
 // call,apply,bind methods
+// Call is a function that helps you change the context of the invoking function.
 
 // let userDetails1 = {
 //     name:"mohit",
