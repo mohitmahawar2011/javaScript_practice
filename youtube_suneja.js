@@ -1,3 +1,9 @@
+/*
+Q -> In javascript everything is an object ------
+    Nearly everything in JavaScript is an object other than six things that are not objects 
+    which are — null , undefined , strings, numbers, boolean, and symbols. These are called primitive values or primitive types.
+*/
+
 // lec -1
 // rest and spread operation
 
