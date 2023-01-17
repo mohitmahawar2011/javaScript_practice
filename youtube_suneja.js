@@ -709,6 +709,34 @@ Q -> In javascript everything is an object ------
 // console.log(`arr1 ${arr1}`)
 // console.log(`arr2 ${arr2}`)
 
+// Polyfill--->
+// A polyfill is a piece of code that is used to provide/fill-in some feature on older browsers that don't support that feature by default. 
+// For example, there are some JavaScript functions/features that Google Chrome supports but Internet Explorer does not support (like Promises or Object.assign()).
+// In order to ensure that the website doesn't break in IE, a developer could write a piece of polyfill code that simulates the missing functionality that IE does not support.
+
+// polyfill of bind method --->
+/*
+let name = {
+   firstname:"mohit",
+   lastname:"jain"
+  }
+let printName = function(hometown, state, country) {
+    console.log(this.firstname + " " + this.lastname + " " + this.hometown + " " + this.country);
+  }
+  
+ let printMyName = printName.bind(name, "jaipur", "rajasthan");
+ printMyName("India");
+ 
+ Function.prototype.mybind = function(...args) {
+    let obj = this,
+        params = args.slice(1);
+    return function (...args2) {
+        obj.apply(args[0], [...params, ...args2]);
+    }
+}
+
+let printName2 = printName.mybind(name, "jaipur", "rajasthan");
+printName2("India");
 
 
-
+*/
