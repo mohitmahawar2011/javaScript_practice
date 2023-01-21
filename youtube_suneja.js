@@ -709,6 +709,56 @@ Q -> In javascript everything is an object ------
 // console.log(`arr1 ${arr1}`)
 // console.log(`arr2 ${arr2}`)
 
+
+// shellow copy 
+/*
+let obj = {
+    name:"mohit",
+    pass:"admin"
+}
+
+//let myobj = obj; // call by reference problem
+//let myobj = {...obj} // reduce call by reference problem (shellow copy)
+//let myobj = Object.assign({}, obj) // shellow copy -> this process is copy only main object they do not copy nested objects.
+
+let name = "shree";
+myobj.name = name;
+
+console.log("obj is : ", obj);
+console.log("myobj is : ", myobj);
+*/
+
+
+// deep copy 
+/*
+const _ = require('lodash');
+obj = {
+    name:"mohit",
+    pass:"admin",
+    getdata:function(){
+        console.log("hi");
+    },
+    address: {
+        city:"jaipur",
+        state:"raj"
+    }
+}
+
+
+//let myobj = JSON.parse(JSON.stringify(obj)); // it can copy nested object as well but it can't copy inner functions and dates.
+//let myobj = Object.assign({}, obj) // it not work for nested object "jaipur" convert into kota in obj & myobj both. but it copy inner function also.
+
+let myobj = _.cloneDeep(obj); // it is lodash package install by using npm and you can use cdn script link also it can do deep copy of object.
+
+myobj.address.city = "kota";
+
+console.log("obj is : ",obj);
+console.log("my is :", myobj);
+
+*/
+
+
+
 // Polyfill--->
 // A polyfill is a piece of code that is used to provide/fill-in some feature on older browsers that don't support that feature by default. 
 // For example, there are some JavaScript functions/features that Google Chrome supports but Internet Explorer does not support (like Promises or Object.assign()).
