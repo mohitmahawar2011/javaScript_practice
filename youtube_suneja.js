@@ -790,3 +790,38 @@ printName2("India");
 
 
 */
+
+/*
+console.log("Polyfill of forEach, map, filter, reduce");
+Array.prototype.myForEach = function(mycallback){
+    for(let i = 0;i<this.length;i++){
+        mycallback(this[i],i,this);
+    }
+}
+let arr = [22,33,44,55,66,7];
+arr.myForEach((ele)=>{
+    console.log(ele);
+})
+// --------------------------------
+Array.prototype.myMap = function(callbackFn) {
+  var arr = [];              
+  for (var i = 0; i < this.length; i++) {
+    arr.push(callbackFn(this[i], i, this));
+  }
+  return arr;
+}
+arr.myMap((ele)=>console.log(ele-1))
+// --------------------------------
+Array.prototype.myFilter = function(callbackFn) {
+  var arr = [];     
+  for (var i = 0; i < this.length; i++) {
+    if (callbackFn.call(this, this[i], i, this)) {
+      arr.push(this[i]);
+    }
+  }
+  return arr;
+}
+let arr1 = [11,22,33,44,55];
+let filter = arr1.myFilter((ele)=>ele%2);
+console.log(filter)
+*/
