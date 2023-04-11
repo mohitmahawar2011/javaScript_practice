@@ -4,6 +4,44 @@ Q -> In javascript everything is an object ------
     which are — null , undefined , strings, numbers, boolean, and symbols. These are called primitive values or primitive types.
 */
 
+
+// `
+// // first class function -->
+// Can be stored as a value in a variable
+// Can be returned by another function
+// Can be passed as a function's argument
+// Can be stored in an array, stack, or queue
+// Can have its own properties and methods.
+// `
+
+// `
+// // pure function -->
+// pure function always returns the same result if the same arguments are passed. 
+// It does not depend on any state, or data change during a program’s execution rather it only depends on its input arguments.
+// `
+
+// ` 
+// // closures -->
+// the inner function has access to the outer function variable.
+// Access to its own scope.
+// Access to the variables of the outer function.
+// Access to the global variables.
+// `
+
+// `
+// // higher order function -->
+// accepts one or more functions as arguments and returns a function as a result.
+// forEach,setTimeout, map, CompactMap, flatMap, filter, reduce, sort, and sorted
+// `
+
+// `
+// // callback function --> 
+// function passed into another function as a parameter.
+// It is useful to develop an asynchronous JavaScript code.
+// `
+
+
+
 // lec -1
 // rest and spread operation
 
