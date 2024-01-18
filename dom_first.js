@@ -61,6 +61,22 @@
 // }
 
 
+// const arr = [1, 2, 3, 4, 2, 5, 6, 3,1];
+// Using functional programming to find duplicates
+// const findDuplicates = (arr) =>
+//   arr.filter((value, index, self) => self.indexOf(value)!==index );
+// console.log("Duplicate values:", findDuplicates(arr));
+
+// function Duplicate(arr){
+//     let result = [];
+//     arr.forEach((val,index, self)=>{
+//         self.slice(0,index).includes(val) && result.push(val)
+//     })
+//     return result;
+// }
+// console.log(Duplicate(arr))
+
+
 // remove duplicates
 
 // function remove_duplicqates(arr){
