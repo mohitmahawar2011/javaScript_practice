@@ -863,3 +863,35 @@ let arr1 = [11,22,33,44,55];
 let filter = arr1.myFilter((ele)=>ele%2);
 console.log(filter)
 */
+
+
+
+// string parentheses pattern validation ----
+// const str = "{}[[{()}]]";
+// const pattern = {
+//     "{":"}",
+//     "[":"]",
+//     "(":")"
+// }
+// let result = [];
+// let flag = true; // valid
+
+// for(let i of str){
+//         const len = result.length-1
+//     if (i in pattern){
+//         result.push(i)
+//     }else if(pattern[result[len]] !== i && Object.values(pattern).includes(i) ){
+//         flag = false;
+//         break;
+//     }else {
+//         if(pattern[result[len]] == i){
+//             result.pop()
+//         }
+//     }
+// }
+
+// if (!flag || result.length){
+//     console.log("not valid")
+// } else {
+//     console.log("valid")
+// }
